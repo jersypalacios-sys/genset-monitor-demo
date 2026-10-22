@@ -1,0 +1,325 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.12573409730673,
+          -11.59636052845878
+        ]
+      },
+      "properties": {
+        "id": "900-EG-022",
+        "name": "Comedor Tuctu (900-EG-022)",
+        "source": "GENSET ESTACIONARIOS .kmz",
+        "is_origin": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.13274569349342,
+          -11.73326467504605
+        ]
+      },
+      "properties": {
+        "id": "701-EG-010",
+        "name": "S.E. Pomacocha (701-EG-010)",
+        "source": "GENSET ESTACIONARIOS .kmz",
+        "is_origin": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.05598070905022,
+          -11.6336968246628
+        ]
+      },
+      "properties": {
+        "id": "800-EG-011",
+        "name": "Planta Kingsmill (800-EG-011)",
+        "source": "GENSET ESTACIONARIOS .kmz",
+        "is_origin": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.1450916789296,
+          -11.66751697841375
+        ]
+      },
+      "properties": {
+        "id": "255-EG-009",
+        "name": "Sala 28 (255-EG-009)",
+        "source": "GENSET ESTACIONARIOS .kmz",
+        "is_origin": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.14632033404347,
+          -11.66960980692538
+        ]
+      },
+      "properties": {
+        "id": "2210-EG-009",
+        "name": "Sala 19 (2210-EG-009)",
+        "source": "GENSET ESTACIONARIOS .kmz",
+        "is_origin": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.14629292547028,
+          -11.66963704203745
+        ]
+      },
+      "properties": {
+        "id": "260-EG-005",
+        "name": "Sala 30 (260-EG-005)",
+        "source": "GENSET ESTACIONARIOS .kmz",
+        "is_origin": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.14418343195088,
+          -11.66973586881579
+        ]
+      },
+      "properties": {
+        "id": "230-EG-003",
+        "name": "Sala 17 (230-EG-003)",
+        "source": "GENSET ESTACIONARIOS .kmz",
+        "is_origin": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.14377644862675,
+          -11.67115707225674
+        ]
+      },
+      "properties": {
+        "id": "280-EG-006",
+        "name": "Sala 31 (280-EG-006)",
+        "source": "GENSET ESTACIONARIOS .kmz",
+        "is_origin": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.13135360120874,
+          -11.62988441456003
+        ]
+      },
+      "properties": {
+        "id": "702-EG-020",
+        "name": "Antena Quilla (702-EG-020)",
+        "source": "GENSET ESTACIONARIOS .kmz",
+        "is_origin": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.14050063274992,
+          -11.66420779895638
+        ]
+      },
+      "properties": {
+        "id": "703-EG-019",
+        "name": "Antena Punto 02 (703-EG-019)",
+        "source": "GENSET ESTACIONARIOS .kmz",
+        "is_origin": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.14640204804066,
+          -11.66493480559102
+        ]
+      },
+      "properties": {
+        "id": "702-EG-021",
+        "name": "Data Center Planta (702-EG-021)",
+        "source": "GENSET ESTACIONARIOS .kmz",
+        "is_origin": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.13018230257903,
+          -11.60552985539209
+        ]
+      },
+      "properties": {
+        "id": "702-EG-022",
+        "name": "Data Center Mina (702-EG-022)",
+        "source": "GENSET ESTACIONARIOS .kmz",
+        "is_origin": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.13538525227915,
+          -11.59032793454912
+        ]
+      },
+      "properties": {
+        "id": "900-EG-017",
+        "name": "Antena Shanshamarca (900-EG-017)",
+        "source": "GENSET ESTACIONARIOS .kmz",
+        "is_origin": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.15389111748708,
+          -11.61241649256917
+        ]
+      },
+      "properties": {
+        "id": "900-EG-018",
+        "name": "Antena Natividad (900-EG-018)",
+        "source": "GENSET ESTACIONARIOS .kmz",
+        "is_origin": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.14510240961891,
+          -11.66789669666644
+        ]
+      },
+      "properties": {
+        "id": "220-EG-001",
+        "name": "Sala 15 (220-EG-001)",
+        "source": "GENSET ESTACIONARIOS .kmz",
+        "is_origin": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.14568569791514,
+          -11.67143880689963
+        ]
+      },
+      "properties": {
+        "id": "GE-LEC-001",
+        "name": "Sala 20 (GE-LEC-001)",
+        "source": "GENSET ESTACIONARIOS .kmz",
+        "is_origin": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.13778637923504,
+          -11.67346846858905
+        ]
+      },
+      "properties": {
+        "id": "5020-UGE-GE-001",
+        "name": "Topico Tunshuruco (5020-UGE-GE-001)",
+        "source": "GENSET ESTACIONARIOS .kmz",
+        "is_origin": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.13738963803745,
+          -11.67516088386154
+        ]
+      },
+      "properties": {
+        "id": "5029-UGE-GE-002",
+        "name": "Comedor Tunshuruco (5029-UGE-GE-002)",
+        "source": "GENSET ESTACIONARIOS .kmz",
+        "is_origin": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.14629954141738,
+          -11.66677976735771
+        ]
+      },
+      "properties": {
+        "id": "700-EG-007",
+        "name": "SALA 700 (700-EG-007)",
+        "source": "GENSET ESTACIONARIOS .kmz",
+        "is_origin": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.137795287836,
+          -11.67231122588199
+        ]
+      },
+      "properties": {
+        "id": "TALLER",
+        "name": "TALLER DE ELECTRICIDAD - INICIO",
+        "source": "GENSET ESTACIONARIOS .kmz",
+        "is_origin": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+GENSET MONITOR 360 | VERSIÓN ONLINE PREPARADA
+==============================================
+IMPORTANTE: Este ZIP NO está publicado todavía. Necesitas una cuenta de
+hosting y una URL HTTPS. No basta con abrir index.html desde tu PC.
+NO publiques ubicaciones reales de la mina en Internet sin autorización TI/OT.
+
+FUNCIONES DEL PAQUETE
+- Dashboard original con 37 GENSET y sus marcas/documentación disponibles.
+- Mapa y vista satelital con 19 estacionarios y Taller (KMZ), bajo control de acceso.
+- QR de 18 GENSET móviles: URL HTTPS /mobile?tag=GENSET-XX.
+- Ficha QR en celular: solicita permiso GPS, confirma presencia y envía ubicación.
+- API GPS: posiciones de móviles centralizadas en base de datos PostgreSQL.
+- Actualizaciones MANUALES de fichas y horómetros se comparten entre usuarios.
+- Alarma de mantenimiento 230 horas de ciclo de 250, calculada en interfaz.
+- Fuente y fecha de última posición; el QR NO localiza en tiempo real por sí mismo.
+- No lee hardware ni controladores; telemetría real necesitará gateways aprobados.
+
+PUBLICAR DEMO CON RENDER (solo con autorización TI/OT)
+1. Solicita autorización escrita para qué datos se pueden alojar fuera de Chinalco.
+   Si no autorizan coordenadas reales, reemplázalas por datos ficticios ANTES.
+2. Crea un repositorio PRIVADO con estos archivos en GitHub y no subas claves.
+3. En https://dashboard.render.com/ entra con tu cuenta y conecta GitHub.
+4. New + -> Blueprint -> selecciona repositorio privado (render.yaml).
+5. Al crear el Blueprint asigna contraseñas DIFERENTES, robustas (>=16 caracteres):
+   GENSET_ADMIN_PASSWORD, GENSET_OPERATOR_PASSWORD. No compartas en un QR.
+   GENSET_DEVICE_TOKEN puede configurarse con 24+ caracteres aleatorios
+   solo si posteriormente autorizas un dispositivo GNSS para telemetría.
+6. Revisa los PLANES Y COSTOS ACTUALES antes de aprobar la creación del servicio
+   y la base PostgreSQL (no se asume servicio gratis).
+7. Render crea la URL HTTPS. Comprobar /health, e iniciar sesión con
+   'administrador' y su contraseña antes de imprimir cualquier etiqueta.
+8. En QR móviles, el QR pasará a apuntar al propio dominio bajo /mobile?tag=...
+   Verifica que al escanear desde el celular se abre esa dirección HTTPS.
+9. El trabajador inicia sesión como 'operador', acepta el aviso,
+   pulsa 'Estoy junto al GENSET: enviar mi GPS' y concede permiso.
+10. Desde Dashboard / Ubicaciones usa 'Actualizar GPS móviles'; los
+   reportes se consultan desde PostgreSQL y se comparten entre usuarios.
+
+NUNCA INCLUYAS CONTRASEÑAS EN LOS QR. El QR solo codifica URL + TAG.
+
+ALTERNATIVA RECOMENDADA PARA CHINALCO
+- Solicitar al equipo TI/OT un servidor en la red empresarial/VPN con dominio HTTPS.
+- Usar el Dockerfile de este paquete en infraestructura autorizada.
+- Asignar base de datos PostgreSQL de la empresa mediante DATABASE_URL.
+- Configurar SSO, MFA, auditoría, inventario de usuarios, firewalls, copia de
+  seguridad y política de retención antes del uso real.
+- Evitar publicar direcciones exactas de infraestructura minera en repos públicos.
+- Todo el proyecto deberá ser aprobado antes de la integración física.
+
+PROBAR SIN INTERNET EN UN PC (NO ES ONLINE)
+- Ejecuta INICIAR_PRUEBA_LOCAL_WINDOWS.bat. Apunta a http://127.0.0.1:8000.
+- El script imprime credenciales temporales distintas para admin y operador.
+- Este paso solo verifica el funcionamiento del servidor, sin abrirlo en red.
+
+SEGURIDAD Y LIMITACIONES
+- HTTP Basic sobre HTTPS solo para DEMO controlada. No sustituye SSO empresarial.
+- GET /, /index.html: admin; GET /mobile?tag=...: admin u operador.
+- GET /api/v1/mobiles/positions: admin; GET /api/v1/fleet: admin.
+- PUT /api/v1/fleet/{TAG}: admin; GET ubicación de móvil: admin u operador.
+- POST /api/v1/mobiles/{TAG}/checkin: admin u operador (GPS voluntario).
+- POST /api/v1/mobiles/{TAG}/telemetry: token distinto solo para dispositivos.
+- POST de posiciones no actualiza el estado mecánico del GENSET.
+- Una posición de QR es puntual. GNSS continuo requiere hardware y red.
+- Mapa satelital pide consentimiento para utilizar mosaicos de proveedor externo.
+- Ubicaciones KMZ siguen siendo documentales.
+- La clave de acceso del servidor y credenciales jamás deben enviarse por chat.
+
+TECNOLOGÍA: FastAPI + SQLAlchemy + PostgreSQL (producción) / SQLite local.
+DESPLIEGUE: render.yaml y Dockerfile. El paquete no despliega servicios por sí solo.
