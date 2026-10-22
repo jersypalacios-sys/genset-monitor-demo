@@ -1,30 +1,17 @@
-# GENSET MONITOR 360 · Demostración pública segura
+# GENSET MONITOR 360 — KMZ original corregido
 
-Esta carpeta contiene un **prototipo estático** para GitHub Pages. No incluye el inventario ni las coordenadas reales de Chinalco, y no necesita un servidor Python.
+Esta versión sustituye los puntos ficticios de la versión anterior. Incluye exactamente 19 posiciones de GENSET estacionarios y el punto de inicio Taller de Electricidad, extraídos del archivo `GENSET ESTACIONARIOS .kmz`. Los nombres y coordenadas están incrustados en `index.html` y aparecen automáticamente en Ubicaciones.
 
-## ¿Cómo veo los estacionarios reales sin publicarlos?
+## Aviso de seguridad importante
 
-1. Abre `index.html` o la página publicada en GitHub Pages.
-2. Entra en **Ubicaciones**.
-3. En «Cargar ubicaciones desde tu computadora», elige tu archivo privado `GENSET ESTACIONARIOS .kmz`.
-4. Verás los marcadores, coordenadas y el recorrido desde Taller de Electricidad en tu propio navegador.
-5. Al recargar la página, desaparecen los puntos reales: no se guardan ni se envían al servidor.
+El repositorio `genset-monitor-demo` y GitHub Pages son **PÚBLICOS**. Si subes este archivo, **cualquier persona puede leer las coordenadas exactas del KMZ**, aunque no active el mapa satelital. Publícalo solamente si la autorización de Chinalco cubre expresamente la divulgación pública de las ubicaciones. De lo contrario, utiliza la versión segura con importación local.
 
-**Advertencia:** el botón «Vista satelital» está desactivado por defecto. Si lo habilitas, el navegador solicita mosaicos de Esri y puede transmitir el área del mapa al proveedor externo. Su uso con coordenadas reales debe estar autorizado.
+## Cómo reemplazar el archivo web
 
-## Subir a GitHub Pages
+1. Entra al repositorio `genset-monitor-demo` (no al privado).
+2. Usa **Add file → Upload files** y sube el nuevo `index.html` para sustituir el anterior.
+3. Confirma el commit en la rama `principal`.
+4. Revisa **Settings → Pages** y abre la URL del sitio después de que termine la publicación.
+5. Abre **Ubicaciones**. Los 19 estacionarios y el Taller estarán precargados.
 
-1. En tu cuenta, crea un **repositorio nuevo y público exclusivo para esta demo**, por ejemplo `genset-monitor-demo`.
-2. **Sube solamente `index.html` y este `README.md`** (no subas el KMZ, KML, GeoJSON, ni el ZIP privado anterior).
-3. En GitHub: **Settings → Pages → Build and deployment → Source: Deploy from a branch**.
-4. Selecciona rama `main` (o la rama predeterminada que exista), carpeta `/(root)`, y presiona **Save**.
-5. Tras publicarse, visita la dirección indicada por GitHub en Pages. La URL habitualmente será `https://TU_USUARIO.github.io/genset-monitor-demo/`.
-
-### Privacidad
-
-- No se incluyen ubicaciones reales ni TAG originales en el código público.
-- La importación usa File API, DOMParser y DecompressionStream del navegador, sin subir el KMZ.
-- No hay `fetch` para transmitir ubicaciones; no hay almacenamiento local persistente de puntos importados.
-- El ejemplo de flota, alarmas y horómetros es ficticio y no constituye monitoreo real.
-- GitHub Pages no ejecuta `server.py`, ni guarda GPS de QR, ni proporciona una API privada.
-- Evita usar una computadora compartida para consultar datos sensibles.
+**Alcance:** solo las coordenadas y nombres son documentales del KMZ. Los estados, marcas no indicadas en el KMZ y horómetros de demostración **no son datos operativos reales**. El recorrido dibujado es por segmentos rectos, no una ruta vehicular validada. GitHub Pages no ofrece seguimiento GNSS en tiempo real.
